@@ -1,0 +1,42 @@
+header {
+    margin-bottom: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
+}
+
+
+.botones {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.botones a {
+    display: inline-block;
+    text-decoration: none;
+    color:black;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.botones a:hover {
+    padding: 10px;
+    background-color: #f0f0f0;
+    transition: background-color 0.8s ease;
+    transform: scale(1.05);
+    transition: transform 0.5s ease;
+}
+
+#hero {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
