@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sArchiteqture</title>
+    <link rel="stylesheet" href="contacto.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="../index.html">sArchiteqture</a>
+        </div>
+
+        <nav class="botones">
+            <a href="../index.html">Inicio</a>
+            <a href="about.html">Sobre Nosotros</a>
+            <a href="services.html">Servicios</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="contacto">
+            <div>
+                <img src="images/contac-background.png" class="image">
+            </div>
+
+            <div class="form">
+                <div class="formulario-texto">
+                    <h1>Contáctanos</h1>
+                    <p>¿Tienes alguna pregunta o quieres discutir tu proyecto? ¡Estamos aquí para ayudarte! Completa el formulario a continuación y nos pondremos en contacto contigo lo antes posible.</p>
+                </div>
+
+                <div class="formulario">
+                    <form action="backEnd/submit_form.php" method="POST">
+                        <input type="text" name="name" placeholder="Nombre completo" required>
+                        <input type="email" name="email" placeholder="Correo electrónico" required>
+                        <input type="text" name="subject" placeholder="Asunto" required>
+                        <textarea name="message" placeholder="Mensaje" required></textarea>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../backEnd/script.js"></script>
+
+</body>
+
+</html>
