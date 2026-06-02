@@ -314,41 +314,23 @@ header.scrolled {
 .cardcontainer {
     display: flex;
     flex-direction: row;
-<<<<<<< Updated upstream
-    
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content:center;
-    padding-top: 35px;
-=======
     flex-wrap:wrap;
     justify-content: center;
     gap: 30px;
     margin: 30px 30px;
    
->>>>>>> Stashed changes
 
     
 }
 
-<<<<<<< Updated upstream
-.card {
+.carda {
     display:flex;
     flex-direction: column-reverse;
     height: 350px;
     width: 200px;  
     padding: 20px;
     transition:  transform 0.8s ease, box-shadow 0.4s ease;
-=======
-.carda {
-    display: flex;
-    height: 350px;
-    width: 250px;
-    flex-direction: column-reverse;
-    align-items:center;
-    padding:30px;
-    transition: opacity 0.8s ease, transform 0.8s ease, box-shadow 0.4s ease;
->>>>>>> Stashed changes
+
 }
 #c1{
     background-image: url("images/casa1.png");
@@ -371,41 +353,16 @@ header.scrolled {
     background-size: cover;
     background-position: center;
 
-}.cardctexto{
-<<<<<<< Updated upstream
-    
+}
+.cardctexto{
     max-height: 100px;
     color: white;
-    z-index: 2;
-    text-align:center;
-=======
-    max-height: 100px;
-    color: white;
-
-
->>>>>>> Stashed changes
 }
 
 
-.card:hover {
+.carda:hover {
     transform:  scale(1.15);
-<<<<<<< Updated upstream
-   
-    transition: transform 0.8s ease, box-shadow 0.4s ease;
-=======
-    transition: opacity 0.8s ease, transform 0.8s ease, box-shadow 0.4s ease;
->>>>>>> Stashed changes
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
 }
 
-#carrousel{
 
-}
 
-.carrouselppal{
-    display:flex;
-    width: 100%;
-    height: fit-content;
-    overflow: hidden;
-    
-}
