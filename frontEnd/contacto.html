@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sArchiteqture</title>
+    <link rel="stylesheet" href="contacto.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="../index.html">sArchiteqture</a>
+        </div>
+
+        <nav class="botones">
+            <a href="../index.html">Inicio</a>
+            <a href="about.html">Sobre Nosotros</a>
+            <a href="services.html">Servicios</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="contacto">
+            <div>
+                <img src="images/contac-background.png" class="image">
+            </div>
+
+            <div class="form">
+                <div class="formulario-texto">
+                    <h1>Contáctanos</h1>
+                    <p>¿Tienes alguna pregunta o quieres discutir tu proyecto? ¡Estamos aquí para ayudarte! Completa el
+                        formulario a continuación y nos pondremos en contacto contigo lo antes posible.</p>
+                </div>
+
+                <div class="formulario">
+                    <form action="backEnd/submit_form.php" method="POST">
+                        <input type="text" name="name" placeholder="Nombre completo" required>
+                        <input type="email" name="email" placeholder="Correo electrónico" required>
+                        <input type="text" name="subject" placeholder="Asunto" required>
+                        <textarea name="message" placeholder="Mensaje" required></textarea>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-contenedor">
+
+            <div class="footer-col marca">
+                <h2>sArchiteqture</h2>
+                <p>Diseño arquitectónico moderno</p>
+            </div>
+
+            <div class="footer-col">
+                <a href="index.html">Inicio</a>
+                <a href="about.html">Sobre nosotros</a>
+                <a href="services.html">Servicios</a>
+            </div>
+
+            <div class="footer-col">
+                <a href="#">Proyectos</a>
+                <a href="#">Diseño interior</a>
+                <a href="#">Arquitectura</a>
+            </div>
+
+            <div class="footer-col">
+                <a href="#">Galería</a>
+                <a href="#">Planos</a>
+                <a href="#">Construcción</a>
+            </div>
+
+            <div class="footer-col">
+                <a href="contacto.html">Contacto</a>
+                <a href="#">Presupuestos</a>
+                <a href="#">Consultas</a>
+            </div>
+
+        </div>
+
+        <div class="footer-linea"></div>
+
+        <div class="footer-redes">
+            <a href="#">f</a>
+            <a href="#">x</a>
+            <a href="#">in</a>
+            <a href="#">ig</a>
+            <a href="#">●●</a>
+        </div>
+
+        <p class="footer-copy">© Copyright. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="../backEnd/script.js"></script>
+
+</body>
+
+</html>
