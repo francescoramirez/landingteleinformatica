@@ -326,6 +326,7 @@ header.scrolled {
 .carda {
     display:flex;
     flex-direction: column-reverse;
+    align-items: center;
     height: 350px;
     width: 200px;  
     padding: 20px;
