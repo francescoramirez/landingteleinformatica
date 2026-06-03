@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
             header.classList.remove("scrolled");
         }
     });
-
+ 
     const cards = document.querySelectorAll(".card");
 
     const observer = new IntersectionObserver((entries) => {
