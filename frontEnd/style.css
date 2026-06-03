@@ -559,25 +559,6 @@ header.scrolled {
     animation-delay: 0.3s;
 }
 
-/* Pequeño brillo que pasa por la sección */
-.sobrenosotros-contenedor::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -120%;
-    width: 60%;
-    height: 100%;
-    background: linear-gradient(
-        120deg,
-        transparent,
-        rgba(255, 255, 255, 0.08),
-        transparent
-    );
-    z-index: 2;
-    animation: brilloSobre 2.5s ease forwards;
-    animation-delay: 0.8s;
-}
-
 /* Texto */
 .sobrenosotros-texto {
     position: relative;
@@ -658,12 +639,3 @@ header.scrolled {
     }
 }
 
-@keyframes brilloSobre {
-    from {
-        left: -120%;
-    }
-
-    to {
-        left: 140%;
-    }
-}
