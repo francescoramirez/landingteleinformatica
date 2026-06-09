@@ -576,7 +576,6 @@ header.scrolled {
 }
 
 /* Si tenés h1 o h2 dentro de sobre nosotros */
-.sobrenosotros-texto h1,
 .sobrenosotros-texto h2 {
     opacity: 0;
     transform: translateY(25px);
