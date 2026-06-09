@@ -75,7 +75,6 @@ header {
     transition: background-color 0.4s ease, padding 0.4s ease, backdrop-filter 0.4s ease;
 }
 
-
 /* Clase opcional para JS al hacer scroll */
 header.scrolled {
     background-color: rgba(0, 0, 0, 0.55);
@@ -221,66 +220,68 @@ header.scrolled {
     animation: fadeUp 1s ease forwards;
     animation-delay: 1s;
 }
-
-.btn {
+.hero-btn {
     display: inline-block;
     text-decoration: none;
-    background-color: white;
-    color: black;
     padding: 16px 30px;
     border-radius: 12px;
     font-size: 18px;
-    transition: transform 0.4s ease, background-color 0.4s ease, box-shadow 0.4s ease, color 0.4s ease;
+    transition: transform 0.4s ease,
+                background-color 0.4s ease,
+                box-shadow 0.4s ease,
+                color 0.4s ease;
 }
 
-.btn:hover {
-    transform: translateY(-5px) scale(1.03);
-    background-color: #f0f0f0;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
-}
-
-#transparente {
+/* CONTACTANOS */
+.hero-btn-outline {
     background-color: transparent;
     border: 2px solid white;
     color: white;
 }
 
-#transparente:hover {
+.hero-btn-outline:hover {
+    transform: translateY(-5px) scale(1.03);
     background-color: white;
     color: black;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+}
+
+/* VER SERVICIOS */
+.hero-btn-solid {
+    background-color: white;
+    border: 2px solid white;
+    color: black;
+}
+
+.hero-btn-solid:hover {
+    transform: translateY(-5px) scale(1.03);
+    background-color: #f0f0f0;
+    color: black;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
 }
 
 /* ============================= */
 /* PARTE INFERIOR */
 /* ============================= */
+#hero {
+    position: relative;
+}
 
 .hero-bottom {
     position: absolute;
-    left: 750px;
     right: 70px;
-    bottom: 15px;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-
+    bottom: 40px;
     z-index: 2;
 }
-
-/* ============================= */
-/* ESTADÍSTICAS */
-/* ============================= */
 
 .stats {
     display: flex;
     gap: 60px;
     text-align: center;
-    margin-bottom: 20px;
 }
 
 .stats div {
     min-width: 120px;
-
     opacity: 0;
     animation: fadeUp 1s ease forwards;
 }
@@ -315,22 +316,22 @@ header.scrolled {
 .cardcontainer {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    flex-wrap:wrap;
+    justify-content: center;
     gap: 30px;
-    padding: 80px 70px;
+    margin: 30px 30px;
 
-    
 }
 
-.card {
-    display: flex;
-    box-sizing: border-box;
-    height: 350px;
-    width: 300px;
-    opacity: 100;
-    border-radius: 10px;
+.carda {
+    display:flex;
+    flex-direction: column-reverse;
     align-items: center;
-    transition: opacity 0.8s ease, transform 0.8s ease, box-shadow 0.4s ease;
+    height: 500px;
+    width: 400px;  
+    padding: 20px;
+    transition:  transform 0.8s ease, box-shadow 0.4s ease;
+
 }
 #c1{
     background-image: url("images/casa1.png");
@@ -354,21 +355,16 @@ header.scrolled {
     background-position: center;
 
 }.cardctexto{
-    width: 90%;
     max-height: 100px;
+    font-size: 23.8676767px;
     color: white;
-    position: absolute;
-    bottom: 20px;
-    left: 50%
 }
 
 
-.card:hover {
-    transform:  scale(1.01);
-    transform: translateY(-15px);
-    transition: opacity 0.8s ease, transform 0.8s ease, box-shadow 0.4s ease;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+.carda:hover {
+    transform:  scale(1.0767);
 }
+
 
 /* ============================= */
 /* FOOTER */
