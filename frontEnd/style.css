@@ -528,6 +528,7 @@ header.scrolled {
 /* ============================= */
 
 .sobrenosotros-contenedor {
+    margin-top: 20px;
     position: relative;
     min-height: 520px;
     align-items: center;

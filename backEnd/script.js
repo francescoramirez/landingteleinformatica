@@ -19,8 +19,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
             if (entry.isIntersecting) {
                 entry.target.classList.add("show");
-
-                // Deja de observar la card una vez mostrada
                 observer.unobserve(entry.target);
             }
 
@@ -34,3 +32,5 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+
+
