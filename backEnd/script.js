@@ -34,3 +34,21 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+
+// Seleccionamos los elementos
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('.botones');
+
+// Evento para abrir y cerrar el menú al hacer clic en la hamburguesa
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active'); // Transforma la hamburguesa en "X"
+    navMenu.classList.toggle('active');   // Desliza el menú hacia adentro
+});
+
+// Opcional y recomendado: Cerrar el menú cuando el usuario hace clic en un enlace
+document.querySelectorAll('.botones a').forEach(enlace => {
+    enlace.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navMenu.classList.remove('active');
+    });
+});
