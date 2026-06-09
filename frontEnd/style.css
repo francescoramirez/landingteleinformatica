@@ -319,7 +319,8 @@ header.scrolled {
     flex-wrap:wrap;
     justify-content: center;
     gap: 30px;
-    margin: 30px 30px;
+    padding: 50px 50px;
+    
 
 }
 
@@ -350,7 +351,7 @@ header.scrolled {
     background-position: center;
 }
 #c4{
-    background-image: url("images/casa4.png");
+    background-image: url(" images/casa4.png");
     background-size: cover;
     background-position: center;
 
@@ -638,8 +639,8 @@ header.scrolled {
 .cardtestim{
     height: fit-content;
     width: 250px;
-    background: linear-gradient(135deg,  #e7e7e7, #adadad);
-    border-radius: 3px;
+    background: linear-gradient(135deg,  #eeeeee, #d7d7d7);
+    border-radius: 15px;
     display:flex;
     flex-direction:column;
     justify-content:center;
@@ -648,22 +649,24 @@ header.scrolled {
     gap:10px;
     transition: 0.2s;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+ 
 }
 .recuadrotxt{
     height: fit-content;
     width: fit-content;
-    border-radius:2px;
+    border-radius:15px;
     background-color: #f3f3f3;
     box-sizing:border-box;
     padding:10px;
+    text-align: center;
 }
 .cardtestim img{
-    width:80%;
-    margin-top: 10px;
+    width:75%;
+    margin:10px 0;
     border-radius: 50%;
     aspect-ratio: 1/1;
     object-fit: cover;
-
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
 }
 .cardtestim p{
     text-align:center;
@@ -676,4 +679,30 @@ header.scrolled {
     transition: 0.4s;
     translate: 0px -15px 0px;
     scale: 1.02;
+}
+.cuentaregr{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.75),
+        rgba(0, 0, 0, 0.35),
+        rgba(0, 0, 0, 0.8)
+    ), url("images/casa2.png");
+    color: white;
+    font-size: 35px;
+    padding: 40px 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.cuentaregr-contenedor{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap: 20px;
+}
+#contador{
+    font-size: 48px;
+    font-weight: bold;
+    color:#ffffff
 }
