@@ -636,6 +636,18 @@ header.scrolled {
         transform: translateY(0);
     }
 }
+#testimonios{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding: 50px 70px;
+}
+#testimonios h1{
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
+}
 .cardtestim{
     height: fit-content;
     width: 250px;
@@ -705,4 +717,10 @@ header.scrolled {
     font-size: 48px;
     font-weight: bold;
     color:#ffffff
+}
+#fstar{
+    width: 120px;
+    height: 120px;
+    display:flex;
+    justify-content:center;
 }
