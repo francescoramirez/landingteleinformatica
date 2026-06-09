@@ -202,6 +202,34 @@ header {
 .botones a:hover::after {
     width: calc(100% - 20px);
 }
+/* Ocultamos el botón en PC */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+    z-index: 1001; /* Para que quede por encima del menú */
+}
+
+/* Las rayitas de la hamburguesa */
+.hamburger span {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Animación de la hamburguesa a "X" (opcional pero queda genial) */
+.hamburger.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
 
 /* ============================= */
 /* ANIMACIONES CONTACTO */
