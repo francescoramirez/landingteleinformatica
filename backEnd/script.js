@@ -19,8 +19,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
             if (entry.isIntersecting) {
                 entry.target.classList.add("show");
-
-                // Deja de observar la card una vez mostrada
                 observer.unobserve(entry.target);
             }
 
@@ -52,3 +50,28 @@ document.querySelectorAll('.botones a').forEach(enlace => {
         navMenu.classList.remove('active');
     });
 });
+const fechaObjetivo = new Date("2026-6-10 23:59:59").getTime();
+
+    function actualizarContador() {
+        const ahora = new Date().getTime();
+        const diferencia = fechaObjetivo - ahora;
+
+        if (diferencia <= 0) {
+            document.getElementById("contador").innerHTML = "¡Tiempo terminado!";
+            clearInterval(intervalo);
+            return;
+        }
+
+        const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+        const horas = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutos = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
+        const segundos = Math.floor((diferencia % (1000 * 60)) / 1000);
+
+        document.getElementById("contador").innerHTML =
+            `${dias}d ${horas}h ${minutos}m ${segundos}s`;
+    }
+
+    actualizarContador();
+    const intervalo = setInterval(actualizarContador, 1000);
+
+

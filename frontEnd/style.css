@@ -332,12 +332,15 @@ header.scrolled {
     display: flex;
     justify-content: center;
     align-items: stretch;
-    gap: 12px;
     margin: 60px 30px;
     height: 450px;
     flex-wrap: nowrap;
     opacity: 0;
     animation: fadeUp 1.2s ease forwards;
+    gap: 30px;
+    padding: 50px 50px;
+    
+
 }
 
 .carda {
@@ -879,4 +882,227 @@ html {
     .footer-linea {
         margin: 40px 0;
     }
+}
+
+.sobrenosotros-texto{
+    color: white;
+    font-size: 18px;
+    line-height: 1.6;
+    padding: 20px;
+    text-align: center;
+}
+
+.sobrenosotros-contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 80px 70px;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.25),
+        rgba(0, 0, 0, 0.65)
+    ), url("images/about.png");
+    background-size: cover;
+    background-position: center;
+}
+
+/* ============================= */
+/* SOBRE NOSOTROS - ANIMACIÓN */
+/* ============================= */
+
+.sobrenosotros-contenedor {
+    margin-top: 20px;
+    position: relative;
+    min-height: 520px;
+    align-items: center;
+    overflow: hidden;
+
+    opacity: 0;
+    transform: translateY(60px);
+    animation: sobreEntrada 1.2s ease forwards;
+}
+
+/* Capa oscura animada encima de la imagen */
+.sobrenosotros-contenedor::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        120deg,
+        rgba(0, 0, 0, 0.75),
+        rgba(0, 0, 0, 0.35),
+        rgba(0, 0, 0, 0.8)
+    );
+    z-index: 1;
+    opacity: 0;
+    animation: fondoSobre 1.4s ease forwards;
+    animation-delay: 0.3s;
+}
+
+/* Texto */
+.sobrenosotros-texto {
+    position: relative;
+    z-index: 3;
+
+    max-width: 700px;
+    margin: 0 auto;
+
+    opacity: 0;
+    transform: translateY(40px);
+    animation: textoSobreEntrada 1s ease forwards;
+    animation-delay: 0.6s;
+
+   
+}
+
+/* Si tenés h1 o h2 dentro de sobre nosotros */
+.sobrenosotros-texto h1,
+.sobrenosotros-texto h2 {
+    opacity: 0;
+    transform: translateY(25px);
+    animation: textoSobreEntrada 0.9s ease forwards;
+    animation-delay: 0.8s;
+}
+
+/* Párrafos */
+.sobrenosotros-texto p {
+    opacity: 0;
+    transform: translateY(25px);
+    animation: textoSobreEntrada 0.9s ease forwards;
+    animation-delay: 1s;
+}
+
+/* Hover suave */
+.sobrenosotros-contenedor:hover .sobrenosotros-texto {
+    transform: translateY(-6px);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.45);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+/* ============================= */
+/* KEYFRAMES SOBRE NOSOTROS */
+/* ============================= */
+
+@keyframes sobreEntrada {
+    from {
+        opacity: 0;
+        transform: translateY(60px);
+        filter: blur(6px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+    }
+}
+
+@keyframes fondoSobre {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes textoSobreEntrada {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+#testimonios{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding: 50px 70px;
+}
+#testimonios h1{
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
+}
+.cardtestim{
+    height: fit-content;
+    width: 250px;
+    background: linear-gradient(135deg,  #eeeeee, #d7d7d7);
+    border-radius: 15px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding: 10px;
+    gap:10px;
+    transition: 0.2s;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+ 
+}
+.recuadrotxt{
+    height: fit-content;
+    width: fit-content;
+    border-radius:15px;
+    background-color: #f3f3f3;
+    box-sizing:border-box;
+    padding:10px;
+    text-align: center;
+}
+.cardtestim img{
+    width:75%;
+    margin:10px 0;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+.cardtestim p{
+    text-align:center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+
+}
+.cardtestim:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    transition: 0.4s;
+    translate: 0px -15px 0px;
+    scale: 1.02;
+}
+.cuentaregr{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.75),
+        rgba(0, 0, 0, 0.35),
+        rgba(0, 0, 0, 0.8)
+    ), url("images/casa2.png");
+    color: white;
+    font-size: 35px;
+    padding: 40px 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.cuentaregr-contenedor{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap: 20px;
+}
+#contador{
+    font-size: 48px;
+    font-weight: bold;
+    color:#ffffff
+}
+#fstar{
+    width: 120px;
+    height: 120px;
+    display:flex;
+    justify-content:center;
 }
