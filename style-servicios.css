@@ -618,32 +618,6 @@ header.scrolled {
     transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
-#servicios {
-    width: 100vw;
-    height: auto;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-height: 80vh;
-    padding: 6vw;
-}
-.servicio-card {
-    margin: 0px;
-    display: flex;
-    color: white;
-    background-color: black;
-    padding: 20px;
-    border-radius: 8px;
-    height: 40vh;
-}
-
-.servicio-card img {
-    width: 30vw;
-    height: 100%;
-    object-fit:cover;
-}
-
 /* ============================= */
 /* KEYFRAMES SOBRE NOSOTROS */
 /* ============================= */
@@ -691,5 +665,201 @@ header.scrolled {
 
     to {
         left: 140%;
+    }
+}
+
+/* ============================= */
+/* SERVICIOS */
+/* ============================= */
+
+#servicios {
+    background-color: #000000;
+    padding: 130px 11%;
+}
+
+.servicios-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 76px;
+}
+
+.servicio-card {
+    background-color: rgb(10, 10, 10);
+    color: white;
+    border-radius: 18px;
+    overflow: hidden;
+    width: 75vw;
+    height: 38vh;
+    display: flex;
+    flex-direction: row;
+    opacity: 0;
+    transform: translateY(35px);
+    animation: fadeUp 1.35s ease forwards;
+    transition: transform 0.45s ease, box-shadow 0.45s ease;
+}
+
+.servicio-card:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.servicio-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 38px rgba(255, 255, 255, 0.14);
+}
+
+.servicio-imagen {
+    width: 30%;
+    height: 100%;
+    overflow: hidden;
+    flex: 0 0 auto;
+}
+
+.servicio-imagen img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+
+.servicio-contenido {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 48px 52px;
+}
+
+.servicio-contenido h2 {
+    margin-bottom: 12px;
+    font-size: 22px;
+    line-height: 1.2;
+}
+
+.servicio-contenido p {
+    font-size: 16px;
+    line-height: 1.45;
+}
+
+.servicios-cta {
+    max-width: 850px;
+    margin: 110px auto 0;
+    text-align: center;
+    opacity: 0;
+    animation: fadeUp 1.35s ease forwards;
+    animation-delay: 0.9s;
+}
+
+.servicios-cta h2 {
+    color: white;
+    font-size: 38px;
+    line-height: 1.18;
+    margin-bottom: 34px;
+}
+
+.servicios-btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    padding: 20px 42px;
+    border-radius: 14px;
+    font-size: 21px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: transform 0.4s ease, background-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+.servicios-btn:hover {
+    transform: translateY(-6px) scale(1.03);
+    background-color: #f2f2f2;
+    box-shadow: 0 18px 42px rgba(255, 255, 255, 0.14);
+}
+
+.servicio-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.servicio-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.servicio-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.servicio-card:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.servicio-card:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.servicio-card:nth-child(6) {
+    animation-delay: 0.6s;
+}
+
+.servicio-card:nth-child(7) {
+    animation-delay: 0.7s;
+}
+
+.servicio-card:nth-child(8) {
+    animation-delay: 0.8s;
+}
+
+@media (max-width: 1100px) {
+    .servicios-grid {
+        gap: 56px;
+    }
+
+    .servicio-card {
+        width: min(100%, 820px);
+        height: 320px;
+    }
+
+    .servicio-contenido {
+        padding: 40px;
+    }
+}
+
+@media (max-width: 650px) {
+    #servicios {
+        padding: 70px 24px;
+    }
+
+    .servicios-grid {
+        gap: 42px;
+    }
+
+    .servicio-card,
+    .servicio-card:nth-child(even) {
+        height: auto;
+        min-height: 520px;
+        flex-direction: column;
+    }
+
+    .servicio-imagen {
+        width: 100%;
+        height: 260px;
+    }
+
+    .servicio-contenido {
+        padding: 34px 28px 38px;
+    }
+
+    .servicios-cta {
+        margin-top: 76px;
+    }
+
+    .servicios-cta h2 {
+        font-size: 30px;
+    }
+
+    .servicios-btn {
+        width: 100%;
+        padding: 18px 28px;
+        font-size: 18px;
     }
 }
