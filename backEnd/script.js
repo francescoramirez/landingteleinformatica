@@ -50,7 +50,7 @@ document.querySelectorAll('.botones a').forEach(enlace => {
         navMenu.classList.remove('active');
     });
 });
-const fechaObjetivo = new Date("2026-6-10 23:59:59").getTime();
+const fechaObjetivo = new Date("2026-6-17 23:59:59").getTime();
 
     function actualizarContador() {
         const ahora = new Date().getTime();
