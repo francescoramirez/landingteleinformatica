@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -12,13 +12,13 @@
 
     <header>
         <div class="logo">
-            <a href="../index.html">sArchiteqture</a>
+            <a href="index.html">sArchiteqture</a>
         </div>
 
         <nav class="botones">
-            <a href="../index.html">Inicio</a>
-            <a href="about.html">Sobre Nosotros</a>
-            <a href="services.html">Servicios</a>
+            <a href="index.html">Inicio</a>
+            <a href="index.html#sobre-nosotros">Sobre Nosotros</a>
+            <a href="servicios.html">Servicios</a>
             <a href="contacto.html">Contacto</a>
         </nav>
     </header>
@@ -37,9 +37,9 @@
                 </div>
 
                 <div class="formulario">
-                    <form action="backEnd/submit_form.php" method="POST">
-                        <input type="text" name="name" placeholder="Nombre completo" required>
-                        <input type="email" name="email" placeholder="Correo electrónico" required>
+                    <form action="../backEnd/submit_form.php" method="POST">
+                        <input type="text" name="name" placeholder="Nombre completo" autocomplete="name" required>
+                        <input type="email" name="email" placeholder="Correo electrónico" autocomplete="email" required>
                         <input type="text" name="subject" placeholder="Asunto" required>
                         <textarea name="message" placeholder="Mensaje" required></textarea>
                         <button type="submit">Enviar</button>
@@ -59,8 +59,8 @@
 
             <div class="footer-col">
                 <a href="index.html">Inicio</a>
-                <a href="about.html">Sobre nosotros</a>
-                <a href="services.html">Servicios</a>
+                <a href="index.html#sobre-nosotros">Sobre nosotros</a>
+                <a href="servicios.html">Servicios</a>
             </div>
 
             <div class="footer-col">
