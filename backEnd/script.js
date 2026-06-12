@@ -21,7 +21,9 @@ document.addEventListener("DOMContentLoaded", () => {
             threshold: 0.2
         });
 
-        cards.forEach((card) => observer.observe(card));
+        cards.forEach((card) => {
+            observer.observe(card);
+        });
     }
 
     const hamburger = document.querySelector(".hamburger");
@@ -44,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const contador = document.getElementById("contador");
 
     if (contador) {
-        const fechaObjetivo = new Date("2026-06-10T23:59:59").getTime();
+        const fechaObjetivo = new Date("2026-06-17T23:59:59").getTime();
 
         const actualizarContador = () => {
             const ahora = Date.now();
