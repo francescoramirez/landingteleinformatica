@@ -1024,15 +1024,28 @@ html {
     justify-content:center;
     align-items:center;
     padding: 50px 70px;
+    overflow: hidden;
 }
 #testimonios h1{
     font-size: 50px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
    
 }
+#testimonios .cardcontainer{
+    width: 100%;
+    max-width: 980px;
+    height: auto;
+    margin: 30px auto 0;
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 28px;
+}
 .cardtestim{
-    height: fit-content;
-    width: 250px;
+    width: min(100%, 280px);
+    min-height: 100%;
     background: linear-gradient(135deg,  #eeeeee, #d7d7d7);
     border-radius: 15px;
     display:flex;
@@ -1046,16 +1059,16 @@ html {
  
 }
 .recuadrotxt{
-    height: fit-content;
-    width: fit-content;
+    width: 100%;
     border-radius:15px;
     background-color: #f3f3f3;
     box-sizing:border-box;
     padding:10px;
     text-align: center;
+    color: #111111;
 }
 .cardtestim img{
-    width:75%;
+    width: min(75%, 170px);
     margin:10px 0;
     border-radius: 50%;
     aspect-ratio: 1/1;
@@ -1094,6 +1107,8 @@ html {
     justify-content:center;
     align-items:center;
     gap: 20px;
+    margin:10px;
+    text-align: center;
 }
 #contador{
     font-size: 48px;
@@ -1101,8 +1116,64 @@ html {
     color:#ffffff
 }
 #fstar{
-    width: 120px;
-    height: 120px;
+    width: 90%;
+   
     display:flex;
     justify-content:center;
+}
+
+#fstar img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    #testimonios {
+        padding: 42px 24px;
+    }
+
+    #testimonios h1 {
+        font-size: 38px;
+        text-align: center;
+    }
+
+    #testimonios .cardcontainer {
+        margin-top: 22px;
+        padding: 10px 0;
+        gap: 22px;
+    }
+
+    .cardtestim {
+        width: min(100%, 340px);
+    }
+
+    .cardtestim:hover {
+        translate: 0 0 0;
+        scale: 1;
+    }
+}
+
+@media (max-width: 480px) {
+    #testimonios {
+        padding: 36px 16px;
+    }
+
+    #testimonios h1 {
+        font-size: 32px;
+    }
+
+
+    .cardtestim {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .cardtestim img {
+        width: 140px;
+    }
+
+    .cardtestim p {
+        font-size: 17px;
+    }
 }
