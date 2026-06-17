@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     const cards = document.querySelectorAll(".card");
-
+    
     if (cards.length > 0 && "IntersectionObserver" in window) {
         const observer = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {

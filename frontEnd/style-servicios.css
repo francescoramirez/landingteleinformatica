@@ -10,9 +10,7 @@ body {
     overflow-x: hidden;
 }
 
-/* ============================= */
 /* ANIMACIONES */
-/* ============================= */
 
 @keyframes fadeDown {
     from {
@@ -56,9 +54,7 @@ body {
     }
 }
 
-/* ============================= */
 /* HEADER */
-/* ============================= */
 
 header {
     position: fixed;
@@ -106,9 +102,7 @@ header.scrolled {
     display: none;
 }
 
-/* ============================= */
 /* BOTONES HEADER */
-/* ============================= */
 
 .botones {
     display: flex;
@@ -149,9 +143,7 @@ header.scrolled {
     width: calc(100% - 20px);
 }
 
-/* ============================= */
 /* HERO */
-/* ============================= */
 
 #hero {
     min-height: 100vh;
@@ -181,9 +173,8 @@ header.scrolled {
     z-index: 1;
 }
 
-/* ============================= */
 /* TEXTO PRINCIPAL */
-/* ============================= */
+
 
 .hero-content {
     position: absolute;
@@ -216,9 +207,7 @@ header.scrolled {
     animation-delay: 0.7s;
 }
 
-/* ============================= */
 /* BOTONES HERO */
-/* ============================= */
 
 .hero-buttons {
     margin-top: 40px;
@@ -275,9 +264,8 @@ header.scrolled {
     z-index: 2;
 }
 
-/* ============================= */
 /* ESTADÍSTICAS */
-/* ============================= */
+
 
 .stats {
     display: flex;
@@ -378,9 +366,7 @@ header.scrolled {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
 }
 
-/* ============================= */
 /* FOOTER */
-/* ============================= */
 
 .footer {
     background-color: #0f0f0f;
@@ -475,9 +461,8 @@ header.scrolled {
     font-size: 14px;
 }
 
-/* ============================= */
+
 /* RESPONSIVE FOOTER */
-/* ============================= */
 
 @media (max-width: 900px) {
     .footer-contenedor {
@@ -541,9 +526,7 @@ header.scrolled {
     background-position: center;
 }
 
-/* ============================= */
 /* SOBRE NOSOTROS - ANIMACIÓN */
-/* ============================= */
 
 .sobrenosotros-contenedor {
     position: relative;
@@ -572,25 +555,7 @@ header.scrolled {
     animation: fondoSobre 1.4s ease forwards;
     animation-delay: 0.3s;
 }
-
-/* Pequeño brillo que pasa por la sección */
-.sobrenosotros-contenedor::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -120%;
-    width: 60%;
-    height: 100%;
-    background: linear-gradient(
-        120deg,
-        transparent,
-        rgba(255, 255, 255, 0.08),
-        transparent
-    );
-    z-index: 2;
-    animation: brilloSobre 2.5s ease forwards;
-    animation-delay: 0.8s;
-}
+;
 
 /* Texto */
 .sobrenosotros-texto {
@@ -632,9 +597,7 @@ header.scrolled {
     transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
-/* ============================= */
 /* KEYFRAMES SOBRE NOSOTROS */
-/* ============================= */
 
 @keyframes sobreEntrada {
     from {
@@ -682,9 +645,7 @@ header.scrolled {
     }
 }
 
-/* ============================= */
 /* SERVICIOS */
-/* ============================= */
 
 #servicios {
     background-color: #000000;

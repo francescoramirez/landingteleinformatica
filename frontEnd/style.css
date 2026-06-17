@@ -8,9 +8,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* ============================= */
 /* ANIMACIONES */
-/* ============================= */
 
 @keyframes fadeDown {
     from {
@@ -54,9 +52,7 @@ body {
     }
 }
 
-/* ============================= */
 /* HEADER */
-/* ============================= */
 
 header {
     position: fixed;
@@ -102,9 +98,8 @@ header.scrolled {
     display: none;
 }
 
-/* ============================= */
+
 /* BOTONES HEADER */
-/* ============================= */
 
 .botones {
     display: flex;
@@ -145,9 +140,7 @@ header.scrolled {
     width: calc(100% - 20px);
 }
 
-/* ============================= */
 /* HERO */
-/* ============================= */
 
 #hero {
     min-height: 100vh;
@@ -324,9 +317,7 @@ header.scrolled {
     transform: translateY(-8px);
 }
 
-/* ============================= */
 /* CARDS */
-/* ============================= */
 
 .cardcontainer {
     display: flex;
@@ -413,10 +404,7 @@ header.scrolled {
     transform: scale(1.1);
 }
 
-/* ============================= */
 /* SOBRE NOSOTROS */
-/* ============================= */
-
 .sobrenosotros-contenedor {
     position: relative;
     display: flex;
@@ -491,7 +479,6 @@ header.scrolled {
     transform: translateY(-4px);
 }
 
-/* KEYFRAMES SOBRE NOSOTROS */
 @keyframes sobreEntrada {
     from { opacity: 0; transform: translateY(60px); filter: blur(6px); }
     to { opacity: 1; transform: translateY(0); filter: blur(0); }
@@ -505,9 +492,7 @@ header.scrolled {
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* ============================= */
 /* FOOTER */
-/* ============================= */
 
 .footer {
     background-color: #0f0f0f;
@@ -677,7 +662,6 @@ html {
         font-size: 24px;
     }
 
-    /* Activación Visual del Botón Hamburguesa */
     .hamburger {
         display: flex !important;
         flex-direction: column;
@@ -906,9 +890,7 @@ html {
     background-position: center;
 }
 
-/* ============================= */
 /* SOBRE NOSOTROS - ANIMACIÓN */
-/* ============================= */
 
 .sobrenosotros-contenedor {
     margin-top: 20px;
@@ -979,9 +961,7 @@ html {
     transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
-/* ============================= */
 /* KEYFRAMES SOBRE NOSOTROS */
-/* ============================= */
 
 @keyframes sobreEntrada {
     from {

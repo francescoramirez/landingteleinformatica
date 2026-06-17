@@ -168,9 +168,7 @@ header.scrolled {
     padding: 22px 70px;
 }
 
-/* ============================= */
 /* BOTONES HEADER */
-/* ============================= */
 
 .botones {
     display: flex;
@@ -228,7 +226,7 @@ header.scrolled {
     transition: all 0.3s ease;
 }
 
-/* Animación de la hamburguesa a "X" (opcional pero queda genial) */
+/* Animación de la hamburguesa a "X"  */
 .hamburger.active span:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
 }
